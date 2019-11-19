@@ -1,15 +1,22 @@
 import React from 'react';
-import nasa from './nasa.png';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from './Components/nav';
 import Home from './Components/home'
 import './App.css';
-
+import './styles.css'
+import Opportunity from './Components/opportunity';
+import Curiosity from './Components/curiosity';
 function App() {
   return (
+      <Router>
+        <Nav />
     <div className="App">
-        <img src={nasa} className="App-logo" alt="nasa" />
-        
-        <Home />
+        <Route exact path='/' component={Home}/>
+        <Route exact path='/opportunity' component={Opportunity}/>
+        <Route exact path='/curiosity' component={Curiosity}/>
+
     </div>
+      </Router>
   );
 }
 
