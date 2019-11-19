@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Nav from './Components/nav';
 import Home from './Components/home'
 import './App.css';
 import './styles.css'
-import Opportunity from './Components/opportunity';
-import Curiosity from './Components/curiosity';
+import Opportunity from './Components/Rovers/opportunity';
+import Curiosity from './Components/Rovers/curiosity';
+import News from './Components/News/news';
 function App() {
   return (
       <Router>
@@ -14,6 +15,7 @@ function App() {
         <Route exact path='/' component={Home}/>
         <Route exact path='/opportunity' component={Opportunity}/>
         <Route exact path='/curiosity' component={Curiosity}/>
+        <Route exact path='/news' component={News}/>
 
     </div>
       </Router>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Image from './image';
-import '../styles.css'
+import '../../styles.css'
 
 export default class Curiosity extends Component {
     constructor (){
@@ -33,9 +33,7 @@ export default class Curiosity extends Component {
     render() {
         return(
             <>
-            <h1 className='text-3xl'>Mars photo's</h1>
-                  <h2>Curiosity photo's</h2>
- 
+            <h1 className='text-3xl'>Curiosity photo's</h1> 
             <h2>Nav Camera</h2>
            {this.state.navImage ?
     <Image image={this.state.navImage} /> :
