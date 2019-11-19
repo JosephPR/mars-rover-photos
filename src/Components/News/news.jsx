@@ -22,7 +22,11 @@ export default class News extends Component {
     render() {
         return(
             <>
-                   <h2>News</h2>
+            <div className='text-3xl flex justify-around pb-3'>
+                   <h2>Science News</h2>
+                   <h2>Description</h2>
+                   <h2></h2>
+            </div>
            {this.state.news ?
     <NewsContainer article={this.state.news} /> :
             <h1>Not Loaded</h1>
