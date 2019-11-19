@@ -1,0 +1,91 @@
+import React, { Component } from 'react';
+import Image from './image';
+
+
+export default class Home extends Component {
+    constructor (){
+        super()
+        this.state = {
+            Image: [],
+           
+        }
+    }
+    componentDidMount() {
+        const pod = 'https://api.nasa.gov/planetary/apod?api_key=eR2LxJaAolssPdDo4cp9NW31er6cNFa8vkcNvcjw'
+        fetch(pod)
+        .then(res => res.json())
+        .then(data => this.setState({ pod: data}))
+        const latest = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?&api_key=eR2LxJaAolssPdDo4cp9NW31er6cNFa8vkcNvcjw'
+        fetch(latest)
+        .then(res => res.json())
+        .then(data => this.setState({ latestImage: data.latest_photos}))
+        const pancamurl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?earth_date=2015-5-8&camera=pancam&api_key=eR2LxJaAolssPdDo4cp9NW31er6cNFa8vkcNvcjw'
+        fetch(pancamurl)
+        .then(res => res.json())
+        .then(data => this.setState({ pancamImage: data.photos}))
+        const navurl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=navcam&api_key=eR2LxJaAolssPdDo4cp9NW31er6cNFa8vkcNvcjw'
+        fetch(navurl)
+        .then(res => res.json())
+        .then(data => this.setState({ navImage: data.photos}))
+        const rhazurl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=rhaz&api_key=eR2LxJaAolssPdDo4cp9NW31er6cNFa8vkcNvcjw'
+        fetch(rhazurl)
+        .then(res => res.json())
+        .then(data => this.setState({ rearImage: data.photos}))
+        const fhazurl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=eR2LxJaAolssPdDo4cp9NW31er6cNFa8vkcNvcjw'
+        fetch(fhazurl)
+        .then(res => res.json())
+        .then(data => this.setState({ frontImage: data.photos}))
+        const masturl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=mast&page=15&api_key=eR2LxJaAolssPdDo4cp9NW31er6cNFa8vkcNvcjw'
+        fetch(masturl)
+        .then(res => res.json())
+        .then(data => this.setState({ mastImage: data.photos}))
+    }
+
+    render() {
+        return(
+            <>
+            
+           {this.state.pod ?
+    <div  className='exp'>
+        <h4>{this.state.pod.explanation}</h4>
+        <a href={this.state.pod.url}>Arrokoth Video</a>
+    </div> :
+            <h1>Not Loaded</h1>
+            }
+            <h1>Mars photo's</h1>
+                  <h2>Latests photo's</h2>
+           {this.state.latestImage ?
+    <Image image={this.state.latestImage} /> :
+            <h1>Not Loaded</h1>
+            }
+                  <h2>Pan Camera</h2>
+           {this.state.pancamImage ?
+    <Image image={this.state.pancamImage} /> :
+            <h1>Not Loaded</h1>
+            }
+            <h2>Nav Camera</h2>
+           {this.state.navImage ?
+    <Image image={this.state.navImage} /> :
+            <h1>Not Loaded</h1>
+            }
+      
+            <h2>Rear Camera</h2>
+           {this.state.rearImage ?
+    <Image image={this.state.rearImage} /> :
+            <h1>Not Loaded</h1>
+            }
+            <h2>Front Camera</h2>
+           {this.state.frontImage ?
+    <Image image={this.state.frontImage} /> :
+            <h1>Not Loaded</h1>
+            }
+            <h2>Mast Camera</h2>
+           {this.state.mastImage ?
+    <Image image={this.state.mastImage} /> :
+            <h1>Not Loaded</h1>
+            }
+            </>
+        )
+    }
+    
+}
