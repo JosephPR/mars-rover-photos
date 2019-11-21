@@ -25,7 +25,7 @@ export default class News extends Component {
             <div className='text-3xl flex justify-around pb-3'>
                    <h2>Science News</h2>
                    <h2>Description</h2>
-                   <h2></h2>
+                
             </div>
            {this.state.news ?
     <NewsContainer article={this.state.news} /> :
