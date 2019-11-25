@@ -22,9 +22,9 @@ export default class News extends Component {
     render() {
         return(
             <>
-            <div className='text-3xl flex justify-around pb-3'>
+            <div className='text-3xl flex-col justify-around pb-3'>
                    <h2>Science News</h2>
-                   <h2>Description</h2>
+               
                 
             </div>
            {this.state.news ?
