@@ -3,6 +3,7 @@ import '../../App.css'
 
 export default function NewsContainer(props) {
     console.log(props)
+    
         const articles = props.article.map( article => {
           return (
             <>
