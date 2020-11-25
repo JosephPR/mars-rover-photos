@@ -35,6 +35,9 @@ export default class Nav extends Component {
                 <Link to="/archive" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
                   Archive
                 </Link>
+                <Link to="/hubble" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
+                  Hubble
+                </Link>
               
     
               </div>

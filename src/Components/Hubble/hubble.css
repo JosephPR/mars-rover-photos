@@ -1,0 +1,70 @@
+
+.news-items{
+ display: grid;
+ grid-template-columns: 1fr;
+}
+.div-1 {
+
+
+ background: url('https://icdn6.digitaltrends.com/image/the-crab-of-the-southern-sky-1280x1499.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.div-2 {
+ background: url('https://cnet3.cbsistatic.com/img/TSl6hr7xkofYCh0bVpp-unTnDp8=/980x551/2014/09/08/e4c615b6-16d4-4a22-9e55-4b17c0c63d01/space1.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.div-3{
+ background: url('https://cnet3.cbsistatic.com/img/TSl6hr7xkofYCh0bVpp-unTnDp8=/980x551/2014/09/08/e4c615b6-16d4-4a22-9e55-4b17c0c63d01/space1.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.name {
+
+ color: rgb(246, 232, 39);
+   text-decoration: none;
+}
+.name:hover {
+ color: rgb(199, 246, 39);
+   text-decoration: none;
+}
+.news-header {
+ 
+ color: white;
+}
+.content
+{
+ display: flex;
+ flex-direction: row;
+}
+
+.spider {
+ max-width: 50%;
+}
+.moon {
+ color: yellow;
+}
+
+.App {
+ text-align: center;
+}
+
+.App-logo {
+ height: 40vmin;
+}
+
+.App-header {
+ background-color: #282c34;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-size: calc(10px + 2vmin);
+ color: white;
+}
+
+.App-link {
+ color: #09d3ac;
+}

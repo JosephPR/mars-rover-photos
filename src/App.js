@@ -6,7 +6,7 @@ import Opportunity from './Components/Rovers/opportunity';
 import Curiosity from './Components/Rovers/curiosity';
 import News from './Components/News/news';
 import Archive from './Components/Archive/pod-archive';
-
+import Hubble from './Components/Hubble/hubble';
 import './App.css';
 import './styles.css'
 
@@ -20,6 +20,7 @@ function App() {
         <Route exact path='/curiosity' component={Curiosity}/>
         <Route exact path='/news' component={News}/>
         <Route exact path='/archive' component={Archive}/>
+        <Route exact path='/hubble' component={Hubble}/>
 
     </div>
       </Router>
