@@ -28,8 +28,6 @@ export default class Home extends Component {
              <div className="flex justify-center items-center header-container">
                 <h1 className='text-5xl'>Recent Mars Photo's</h1>
             </div>
-        
-            <h1 className='text-3xl'>Mars Latest photo's</h1>
            {this.state.latestImage ?
     <Image image={this.state.latestImage} /> :
             <h1>Not Loaded</h1>

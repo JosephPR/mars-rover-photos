@@ -29,14 +29,20 @@ export default class Nav extends Component {
                 <Link to="/curiosity" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
                   Curiosity
                 </Link>
-                {/* <Link to="/news" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
-                  News
+                <Link to="/spirit" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
+                  Spirit
                 </Link>
-                <Link to="/archive" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
+                <Link to="/news" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
+                  News
+                </Link> 
+                {/* <Link to="/archive" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
                   Archive
                 </Link> */}
                 <Link to="/hubble" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
                   Hubble
+                </Link>
+                <Link to="/neptune" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
+                  Neptune
                 </Link>
               
     

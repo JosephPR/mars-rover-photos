@@ -11,6 +11,14 @@
   justify-content: center;
 
 }
+
+.moon-grid{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:2rem;
+}
+
 .main-grid{
     margin:auto 3rem;
     display: grid;
@@ -23,6 +31,9 @@
 .added-color{
   filter: sepia(.5) saturate(3);
 
+}
+.grey-bg{
+  background-color: #a9afbea4;
 }
 
 .exp {
