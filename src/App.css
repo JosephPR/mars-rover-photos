@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  padding-top: 30px;
 }
 .App-logo {
   max-width: 30%;
@@ -12,9 +11,23 @@
   justify-content: center;
 
 }
+.main-grid{
+    margin:1rem;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
+    gap:2rem;
+}
 
 .exp {
-  margin: auto 20%;
+  margin: 5% 20%;
   line-height: 1.7rem;
 }
 
+.header-container{
+  background:url("https://spacenews.com/wp-content/uploads/2018/05/24359364107_152b0152ff_k.jpg") 50% 60% no-repeat;
+  background-size: cover;
+  height: 300px;
+  font-weight:700;
+  color:#fff;
+
+}

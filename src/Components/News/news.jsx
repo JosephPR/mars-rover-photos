@@ -10,14 +10,13 @@ export default class News extends Component {
         }
     }
     async componentDidMount() {
-        const newsurl = 'https://newsapi.org/v2/top-headlines?country=us&category=science&pageSize=10&apiKey=7eb42fa6c4734435a27b9e06e633dfba'
+        const newsurl = 'https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=7eb42fa6c4734435a27b9e06e633dfba'
         await fetch(newsurl)
         .then(res => res.json())
         .then(data => this.setState({
             
             news: data.articles
         }))
-       
     }
 
     render() {
@@ -29,10 +28,9 @@ export default class News extends Component {
                
                 
             </div>
-           {this.state.news === null ?
-           
-           <h1>Not Loaded</h1>:
-    <NewsContainer article={this.state.news} /> 
+           {this.state.news ?
+    <NewsContainer article={this.state.news} /> :
+            <h1>Not Loaded</h1>
             }
      
             </>

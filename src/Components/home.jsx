@@ -23,14 +23,12 @@ export default class Home extends Component {
 
     render() {
         return(
+            
             <>
-           {this.state.pod ?
-    <div  className='exp'>
-        <h4 className='text-xl'>{this.state.pod.explanation}</h4>
-        <a className='text-2xl text-yellow-800 hover:text-yellow-700 underline' href={this.state.pod.url}>Photo of the day</a>
-    </div> :
-            <h1>Not Loaded</h1>
-            }
+             <div className="flex justify-center items-center header-container">
+                <h1 className='text-5xl'>Recent Mars Photo's</h1>
+            </div>
+        
             <h1 className='text-3xl'>Mars Latest photo's</h1>
            {this.state.latestImage ?
     <Image image={this.state.latestImage} /> :
@@ -42,3 +40,12 @@ export default class Home extends Component {
     }
     
 }
+
+// {this.state.pod ?
+//     <div  className='exp'>
+//         <img src={this.state.pod.url} alt="of the day"/>
+//         {/* <a className='text-2xl text-yellow-800 hover:text-yellow-700 underline' href={this.state.pod.url}>Photo of the day</a> */}
+//         <h4 className='text-xl py-5'>{this.state.pod.explanation}</h4>
+//     </div> :
+//             <h1>Not Loaded</h1>
+//             }

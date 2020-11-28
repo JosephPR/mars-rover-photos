@@ -15,7 +15,7 @@ export default class Nav extends Component {
 
     render() {
         return(
-            <nav className="flex items-center justify-between flex-wrap bg-green-800 p-6 opacity-75">
+            <nav className="flex items-center justify-between flex-wrap bg-blue-800  p-6 opacity-75">
             <div className="flex items-center flex-shrink-0 text-white mr-6">
               <img src="nasa.png" className="fill-current h-10 w-10 mr-2" alt="nasa"/>
               <Link to="/"><span className="font-semibold text-xl tracking-tight text-orange-300">Science Center</span></Link>
@@ -29,12 +29,12 @@ export default class Nav extends Component {
                 <Link to="/curiosity" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
                   Curiosity
                 </Link>
-                <Link to="/news" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
+                {/* <Link to="/news" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
                   News
                 </Link>
                 <Link to="/archive" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
                   Archive
-                </Link>
+                </Link> */}
                 <Link to="/hubble" className="block mt-4 lg:inline-block lg:mt-0 text-lg text-orange-200 hover:text-white mr-4">
                   Hubble
                 </Link>

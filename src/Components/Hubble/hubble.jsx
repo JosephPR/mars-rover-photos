@@ -41,10 +41,10 @@ const neptuneurl = "https://api.le-systeme-solaire.net/rest/bodies/neptune"
   }
   getLiveFeed() {
     return this.state.live.map(pic => {
-      return <div classname="images">
+      return <div classname="">
         <div >
-          <p className="news-header">Date: {pic.pub_date.substring(5,10)}</p>
-          <p className="news-header">{pic.description}</p>
+          <p className="">Date: {pic.pub_date.substring(5,10)}</p>
+          <p className="">{pic.description}</p>
           <img src={pic.image} alt="live" />
         </div>
       </div>
@@ -60,7 +60,7 @@ const neptuneurl = "https://api.le-systeme-solaire.net/rest/bodies/neptune"
   render(){
     return (
       <div className="App">
-
+{/* 
      
         <div className="div-1">
           <h1 className="news-header">Hubble News</h1>
@@ -80,11 +80,11 @@ const neptuneurl = "https://api.le-systeme-solaire.net/rest/bodies/neptune"
               }
    
 
-        </div>
-        <div className= "div-3">
-        <h1 className="news-header">Hubble Latest Images</h1>
+        </div> */}
+        <div className= "">
+        <h1 className="text-5xl p-10">Hubble Latest Images</h1>
           {this.state.live
-            ?     <h4>{this.getLiveFeed()}</h4>
+            ?     <div className="main-grid">{this.getLiveFeed()}</div>
             : <h1>Loading...</h1>
           }
         </div>
