@@ -12,10 +12,17 @@
 
 }
 .main-grid{
-    margin:1rem;
+    margin:auto 3rem;
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
     gap:2rem;
+}
+.hubble-image{
+  margin: auto;
+}
+.added-color{
+  filter: sepia(.5) saturate(3);
+
 }
 
 .exp {
@@ -26,7 +33,7 @@
 .header-container{
   background:url("https://spacenews.com/wp-content/uploads/2018/05/24359364107_152b0152ff_k.jpg") 50% 60% no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 400px;
   font-weight:700;
   color:#fff;
 

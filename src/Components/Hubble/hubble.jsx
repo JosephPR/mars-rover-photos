@@ -45,7 +45,7 @@ const neptuneurl = "https://api.le-systeme-solaire.net/rest/bodies/neptune"
         <div >
           <p className="">Date: {pic.pub_date.substring(5,10)}</p>
           <p className="">{pic.description}</p>
-          <img src={pic.image} alt="live" />
+          <img  className="hubble-image" src={pic.image} alt="live" />
         </div>
       </div>
     })
@@ -81,17 +81,17 @@ const neptuneurl = "https://api.le-systeme-solaire.net/rest/bodies/neptune"
    
 
         </div> */}
-        <div className= "">
-        <h1 className="text-5xl p-10">Hubble Latest Images</h1>
+         <div className="flex justify-center items-center header-container">
+         <h2 className="text-5xl">Hubble Latest Images</h2>
+            </div>
+       
+       
           {this.state.live
             ?     <div className="main-grid">{this.getLiveFeed()}</div>
             : <h1>Loading...</h1>
           }
         </div>
-   
-
-
-      </div>
+  
     );
   }
   }

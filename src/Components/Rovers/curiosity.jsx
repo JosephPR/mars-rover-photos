@@ -38,23 +38,23 @@ export default class Curiosity extends Component {
             <h1 className='text-5xl'>Curiosity photo's</h1> 
             </div>
             
-            <h2 className='text-3xl'>Nav Camera</h2>
+            <h2 className='text-5xl'>Nav Camera</h2>
            {this.state.navImage ?
     <Image image={this.state.navImage} /> :
             <h1>Not Loaded</h1>
             }
       
-            <h2 className='text-3xl'>Rear Camera</h2>
+            <h2 className='text-5xl'>Rear Camera</h2>
            {this.state.rearImage ?
     <Image image={this.state.rearImage} /> :
             <h1>Not Loaded</h1>
             }
-            <h2 className='text-3xl'>Front Camera</h2>
+            <h2 className='text-5xl'>Front Camera</h2>
            {this.state.frontImage ?
     <Image image={this.state.frontImage} /> :
             <h1>Not Loaded</h1>
             }
-            <h2 className='text-3xl'>Mast Camera</h2>
+            <h2 className='text-5xl'>Mast Camera</h2>
            {this.state.mastImage ?
     <Image image={this.state.mastImage} /> :
             <h1>Not Loaded</h1>
